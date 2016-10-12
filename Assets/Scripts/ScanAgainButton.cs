@@ -17,8 +17,9 @@ public class ScanAgainButton : MonoBehaviour {
 
     public void ScanAgain()
     {
-        SceneManager.LoadScene("Vuforia-3-UserDefinedTargets", LoadSceneMode.Additive);
-        Application.LoadLevel(0);
+        //  SceneManager.LoadScene("Vuforia-3-UserDefinedTargets", LoadSceneMode.Additive);
+        SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+       // Application.LoadLevel(2);
     }
 
     

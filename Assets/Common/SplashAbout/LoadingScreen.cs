@@ -15,14 +15,12 @@ public class LoadingScreen : MonoBehaviour
     #region PRIVATE_MEMBER_VARIABLES
     private bool mChangeLevel = true;
     private RawImage mUISpinner;
-    private Button mStartButton;
     #endregion // PRIVATE_MEMBER_VARIABLES
+
 
     #region MONOBEHAVIOUR_METHODS
     void Start () 
     {
-        mStartButton = FindObjectOfType<Button>();
-        mStartButton.gameObject.SetActive(false);
         mUISpinner = FindSpinnerImage();
         Application.backgroundLoadingPriority = ThreadPriority.Low;
         mChangeLevel = true;
@@ -40,16 +38,16 @@ public class LoadingScreen : MonoBehaviour
     }
     #endregion // MONOBEHAVIOUR_METHODS
 
+
     #region PRIVATE_METHODS
     private void LoadNextSceneAsync()
     {
 #if (UNITY_5_2 || UNITY_5_1 || UNITY_5_0)
         Application.LoadLevelAsync(Application.loadedLevel+1);
 #else // UNITY_5_3 or above
-        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex+1);
 #endif
     }
-
 
     private RawImage FindSpinnerImage()
     {

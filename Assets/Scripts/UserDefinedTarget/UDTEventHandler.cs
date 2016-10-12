@@ -184,8 +184,9 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
     /// </summary>
     public void BuildNewTarget()
     {
-        if (mFrameQuality == ImageTargetBuilder.FrameQuality.FRAME_QUALITY_HIGH)
-        {
+      //  if (mFrameQuality == ImageTargetBuilder.FrameQuality.FRAME_QUALITY_HIGH)
+
+      //  {
 
             // create the name of the next target.
             // the TrackableName of the original, linked ImageTargetBehaviour is extended with a continuous number to ensure unique names
@@ -199,15 +200,15 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
 
             mQualityImageUIText.text = "";
 
-        }
-        else
-        {
-            Debug.Log("Cannot build new target, due to poor camera image quality");
-            if (mQualityDialog)
-            {
-                mQualityDialog.gameObject.SetActive(true);
-            }
-        }
+      //  }
+      //  else
+       // {
+      //      Debug.Log("Cannot build new target, due to poor camera image quality");
+      //      if (mQualityDialog)
+      //      {
+      //          mQualityDialog.gameObject.SetActive(true);
+      //      }
+      //  }
     }
 
     public void CloseQualityDialog()
