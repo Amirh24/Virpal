@@ -173,7 +173,7 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
         mObjectTracker.Stop();
         mObjectTracker.ResetExtendedTracking();
         mObjectTracker.Start();
-    }
+    }   
     #endregion IUserDefinedTargetEventHandler implementation
 
 
@@ -197,6 +197,8 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
 
             CloseQBuildDialog();
             ShowNewScanningButton();
+            PetModel pm = new PetModel("Amir", 0, PetGender.Female, PetType.Cat);
+            pm.Init();
 
             mQualityImageUIText.text = "";
 
