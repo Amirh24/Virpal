@@ -2058,7 +2058,8 @@
             This value is used to identify non-uniform scaling of the trackable.
             </summary>
         </member>
-        <member name="M:Vuforia.TrackableBehaviour.RegisterTrackableEventHandler(Vuforia.ITrackableEventHandler)">
+        <member name="M:Vuforia.TrackableBehaviour.RegisterTrackableEventHandler(Vuforia.
+                )">
             <summary>
             This method registers a new Tracker event handler at the Tracker.
             These handlers are called as soon as ALL Trackables have been updated

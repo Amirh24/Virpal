@@ -52,6 +52,7 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
     #region MONOBEHAVIOUR_METHODS
     public void Start()
     {
+        Watcher.Init(this);
         mTargetBuildingBehaviour = GetComponent<UserDefinedTargetBuildingBehaviour>();
         if (mTargetBuildingBehaviour)
         {
@@ -198,7 +199,7 @@ public class UDTEventHandler : MonoBehaviour, IUserDefinedTargetEventHandler
             CloseQBuildDialog();
             ShowNewScanningButton();
             PetModel pm = new PetModel("Amir", 0, PetGender.Female, PetType.Cat);
-            pm.Init();
+          //  pm.Init();
 
             mQualityImageUIText.text = "";
 

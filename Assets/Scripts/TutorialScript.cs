@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class TutorialScript : MonoBehaviour {
@@ -40,4 +41,6 @@ public class TutorialScript : MonoBehaviour {
             PlayerPrefs.SetInt("DontShowTutorial", testingVersion);
             }
     }
+
+  //  SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
 }

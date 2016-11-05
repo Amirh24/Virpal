@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Virpal;
-
 
 public class gameManager : MonoBehaviour {
 

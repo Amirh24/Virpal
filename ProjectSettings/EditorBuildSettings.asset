@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vuforia-0-Splash.unity
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+  - enabled: 1
     path: Assets/Scenes/Vuforia-2-Loading.unity
   - enabled: 1
-    path: Assets/Scenes/Vuforia-3-UserDefinedTargets.unity
+    path: Assets/Scenes/Main.unity

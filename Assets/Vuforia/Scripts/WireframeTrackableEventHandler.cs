@@ -41,7 +41,8 @@ namespace Vuforia
         #region PUBLIC_METHODS
 
         /// <summary>
-        /// Implementation of the ITrackableEventHandler function called when the
+        /// Implementation of the 
+        /// function called when the
         /// tracking state changes.
         /// </summary>
         public void OnTrackableStateChanged(
